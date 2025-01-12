@@ -26,7 +26,6 @@ let markup = "";
 createMarkup();
 
 container.addEventListener('click', handlerClik)
-    let result = false;
 
 function handlerClik(evt) {
     const { target } = evt;
@@ -35,6 +34,7 @@ function handlerClik(evt) {
     }
 
     const id = Number(target.dataset.id);
+    let result = false;
 
     if (player === "X") {
         historyX.push(id);
