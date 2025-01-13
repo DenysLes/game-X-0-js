@@ -5,9 +5,13 @@
 
 .content {
     width: 155px;
-    border: 1px solid rgba(24, 195, 113, 1);
+    /* border: 1px solid rgba(24, 195, 113, 1); */
+border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    border-width: 1px;
+     border-style: solid; 
     margin: 0 auto;
-}
+    }
+
 
 .item {
     width: 50px;
@@ -16,7 +20,10 @@
     text-align: center;
     display: inline-block;
     font-size: 25px;
-    border: 1px solid rgba(24, 195, 113, 1);
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+    /* border: 1px solid rgba(24, 195, 113, 1); */
     cursor: pointer;
     vertical-align: middle;
     transition: background .1s;
