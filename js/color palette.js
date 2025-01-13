@@ -22,12 +22,12 @@ function createPaletteItems() {
   const items = [];
   for (let i = 0; i < 60; i++) {
     const color = getRandomHexColor();
-    const item = document.createElement("button");
-    item.type = "button";
-    item.dataset.color = color;
-    item.style.backgroundColor = color;
-    item.classList.add("item");
-    items.push(item);
+    const itemm = document.createElement("button");
+    itemm.type = "button";
+    itemm.dataset.color = color;
+    itemm.style.backgroundColor = color;
+    itemm.classList.add("itemm");
+    items.push(itemm);
   }
   colorPalette.append(...items);
 }

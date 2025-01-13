@@ -25,13 +25,14 @@ let markup = "";
 }
 createMarkup();
 
-container.addEventListener('click', handlerClik)
+container.addEventListener('click', handlerClik);
 
 function handlerClik(evt) {
     const { target } = evt;
     if (!target.classList.contains("js-item") || target.textContent) {
         return;
     }
+    const isEndGame = (history0.length + historyX.length === 9);
 
     const id = Number(target.dataset.id);
     let result = false;
@@ -44,9 +45,7 @@ function handlerClik(evt) {
         result = isWinner(history0)
     }
 
-   target.textContent = player;
-
-    const isEndGame = (history0.length + historyX.length === 9);
+    target.textContent = player;
 
     if (result) {
         console.log(`Winner player ${player} ! 😎`);
@@ -59,7 +58,7 @@ function handlerClik(evt) {
         resetGame();
         return;
     }
-    
+
     player = player === "X" ? "0" : "X";
 }
 
